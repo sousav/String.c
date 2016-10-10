@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Mon Oct 10 16:13:56 2016 John Doe
+** Last update Mon Oct 10 16:49:36 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -26,6 +26,10 @@ t_string		*ConstructStringFromStr(char *str)
 
   self->ToUpperCase = StringToUpperCase;
   self->ToLowerCase = StringToLowerCase;
+
+  self->ContainsChar = StringContainsChar;
+  self->ContainsCharArray = StringContainsCharArray;
+  self->ContainsString = StringContainsString;
 
   self->Destruct = DestructString;
 

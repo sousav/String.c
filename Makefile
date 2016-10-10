@@ -36,6 +36,7 @@ SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_AppendString.c	\
 			$(STRDIR)/MyString_ToUpperCase.c	\
 			$(STRDIR)/MyString_ToLowerCase.c	\
+			$(STRDIR)/MyString_Contains.c		\
 			$(STRDIR)/MyString_Print.c
 
 SRC		+=	$(STRDIR)/MyString_StrUtils_1.c

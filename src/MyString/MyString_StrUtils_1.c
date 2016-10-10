@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 14:15:49 2016 John Doe
-** Last update Mon Oct 10 14:44:49 2016 John Doe
+** Last update Mon Oct 10 17:00:01 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -49,4 +49,23 @@ char			*my_strdup(char *src)
     }
   str[i] = '\0';
   return (str);
+}
+
+int			my_strstr(char *str, char *toFind)
+{
+  int	i;
+
+  if (str[0] != '\0')
+    {
+      i = 0;
+      while (toFind[i] != '\0')
+	{
+	  if (toFind[i] != str[i])
+	    return (my_strstr(str + 1, toFind));
+	  i++;
+	}
+      return (STRING_SUCCESS);
+    }
+  else
+    return(STRING_ERROR);
 }

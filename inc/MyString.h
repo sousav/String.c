@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:18:39 2016 John Doe
-** Last update Mon Oct 10 16:24:12 2016 John Doe
+** Last update Mon Oct 10 17:00:10 2016 John Doe
 */
 
 #ifndef                 MYSTRING_H_
@@ -30,6 +30,10 @@ typedef struct 		s_string
   void (*ToUpperCase)	(struct s_string *self);
   void (*ToLowerCase)	(struct s_string *self);
 
+  int (*ContainsChar)	(struct s_string *self, char c);
+  int (*ContainsCharArray)(struct s_string *self, char *str);
+  int (*ContainsString)	(struct s_string *self, struct s_string *string);
+
   /* Privates properties */
   char			*content;
 
@@ -50,6 +54,10 @@ int 			AppendStringToString(struct s_string *self, struct s_string *toAdd);
 void			StringToUpperCase(t_string *self);
 void			StringToLowerCase(t_string *self);
 
+int 			StringContainsChar(t_string *self, char c);
+int 			StringContainsCharArray(t_string *self, char *str);
+int 			StringContainsString(t_string *self, t_string *string);
+
 void 			DestructString(t_string **self);
 
 
@@ -59,5 +67,6 @@ void			my_putchar(char c, int fd);
 void 			my_putstr(char *str, int fd);
 int			my_strlen(char* str);
 char			*my_strdup(char *src);
+int			my_strstr(char *str, char *toFind);
 
 #endif                  /* !MYSTRING_H_ */
