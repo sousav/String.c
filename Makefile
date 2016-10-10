@@ -32,6 +32,7 @@ SRC		=	$(SRCDIR)/main.c
 SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_Destructor.c		\
 			$(STRDIR)/MyString_AppendChar.c		\
+			$(STRDIR)/MyString_AppendString.c	\
 			$(STRDIR)/MyString_Print.c
 
 SRC		+=	$(STRDIR)/MyString_StrUtils_1.c

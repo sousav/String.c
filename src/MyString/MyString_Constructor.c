@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Mon Oct 10 15:09:34 2016 John Doe
+** Last update Mon Oct 10 15:21:54 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -20,6 +20,7 @@ t_string		*ConstructStringFromStr(char *str)
 
   self->Print = PrintString;
   self->AppendChar = AppendCharToString;
+  self->AppendString = AppendStringToString;
   self->Destruct = DestructString;
 
   self->content = my_strdup(str);
