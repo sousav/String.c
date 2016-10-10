@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Mon Oct 10 16:08:17 2016 John Doe
+** Last update Mon Oct 10 16:13:56 2016 John Doe
 */
 
 #include		"MyString.h"

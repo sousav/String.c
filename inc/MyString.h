@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:18:39 2016 John Doe
-** Last update Mon Oct 10 16:08:02 2016 John Doe
+** Last update Mon Oct 10 16:24:12 2016 John Doe
 */
 
 #ifndef                 MYSTRING_H_
@@ -29,7 +29,6 @@ typedef struct 		s_string
 
   void (*ToUpperCase)	(struct s_string *self);
   void (*ToLowerCase)	(struct s_string *self);
-
 
   /* Privates properties */
   char			*content;
