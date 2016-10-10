@@ -22,10 +22,10 @@ RM		=	rm -f
 
 CC		=	gcc
 CFLAGS		=	-W -Wall -Wextra -g -g3 -ggdb		\
-			-ansi -pedantic				\
+			-pedantic				\
 			-I$(INCDIR)
 
-LDFLAGS		=	-lm
+LDFLAGS		=
 
 SRC		=	$(SRCDIR)/main.c
 
