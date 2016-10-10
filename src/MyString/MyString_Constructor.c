@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Mon Oct 10 15:38:34 2016 John Doe
+** Last update Mon Oct 10 16:08:17 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -19,12 +19,16 @@ t_string		*ConstructStringFromStr(char *str)
     return(NULL);
 
   self->Print = PrintString;
+
   self->AppendChar = AppendCharToString;
   self->AppendCharArray = AppendCharArrayToString;
   self->AppendString = AppendStringToString;
+
+  self->ToUpperCase = StringToUpperCase;
+  self->ToLowerCase = StringToLowerCase;
+
   self->Destruct = DestructString;
 
   self->content = my_strdup(str);
-
   return(self);
 }

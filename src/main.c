@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:17:49 2016 John Doe
-** Last update Mon Oct 10 15:40:46 2016 John Doe
+** Last update Mon Oct 10 16:10:15 2016 John Doe
 */
 
 #include 	"MyString.h"
@@ -13,10 +13,10 @@
 int		main(void)
 {
 
-  m_string string = ConstructStringFromStr("hello");
+  m_string string = ConstructStringFromStr("HELLO\n");
   string->Print(string, STRING_TERM_FD);
 
-  string->AppendCharArray(string, " everybody\n");
+  string->ToLowerCase(string);
 
   string->Print(string, STRING_TERM_FD);
   string->Destruct(&string);
