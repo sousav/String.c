@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:18:39 2016 John Doe
-** Last update Mon Oct 10 15:23:08 2016 John Doe
+** Last update Mon Oct 10 15:39:47 2016 John Doe
 */
 
 #ifndef                 MYSTRING_H_
@@ -37,6 +37,7 @@ typedef t_string *	m_string;
 /* MyString function */
 t_string		*ConstructStringFromStr(char *str);
 int 			AppendCharToString(t_string *self, char c);
+int 			AppendCharArrayToString(struct s_string *self, char *toAdd);
 int 			AppendStringToString(struct s_string *self, struct s_string *toAdd);
 void 			DestructString(t_string **self);
 
