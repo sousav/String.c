@@ -5,25 +5,23 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Mon Oct 10 12:36:35 2016 John Doe
+** Last update Mon Oct 10 14:35:14 2016 John Doe
 */
 
 #include		"MyString.h"
 
-m_string		*ConstructStringFromStr(char *str)
+t_string		*ConstructStringFromStr(char *str)
 {
-  m_string 		*self;
+  t_string 		*self;
 
-  self = malloc(sizeof(m_string));
+  self = malloc(sizeof(t_string));
   if (self == NULL)
     return(NULL);
 
-  /* affectation des méthodes publiques */
   self->Print = PrintString;
-
   self->Destruct = DestructString;
 
-  /* initialisation des propriétés */
+  self->content = my_strdup(str);
 
   return(self);
 }

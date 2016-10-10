@@ -10,7 +10,7 @@
 
 #include		"MyString.h"
 
-void			PrintString(m_string *self, int out_fd)
+void			PrintString(t_string *self, int out_fd)
 {
   my_putstr(self->content, out_fd);
 }

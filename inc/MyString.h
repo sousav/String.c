@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:18:39 2016 John Doe
-** Last update Mon Oct 10 14:24:35 2016 John Doe
+** Last update Mon Oct 10 14:35:58 2016 John Doe
 */
 
 #ifndef                 MYSTRING_H_
@@ -16,6 +16,7 @@
 
 # define		STRING_ERROR 	0
 # define		STRING_SUCCESS 	1
+# define		STRING_TERM_FD	1
 
 typedef struct 		s_string
 {
@@ -28,13 +29,14 @@ typedef struct 		s_string
 
   /* Destructor */
   void (*Destruct)	(struct s_string **self);
-} 			m_string;
+} 			t_string;
+typedef t_string *	m_string;	
 
 /* MyString function */
-m_string		*ConstructStringFromStr(char *str);
-void 			DestructString(m_string **self);
+t_string		*ConstructStringFromStr(char *str);
+void 			DestructString(t_string **self);
 
-void			PrintString(m_string *self, int out_fd);
+void			PrintString(t_string *self, int out_fd);
 
 
 

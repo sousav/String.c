@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 14:07:07 2016 John Doe
-** Last update Mon Oct 10 14:21:49 2016 John Doe
+** Last update Mon Oct 10 14:45:39 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -27,7 +27,7 @@ int 			AppendChar(struct s_string *self, char c)
       i++;
     }
   new_content[i++] = c;
-  new_content[i++] = '\0';
+  new_content[i] = '\0';
   self->content = new_content;
   free(old_content);
   return (STRING_SUCCESS);

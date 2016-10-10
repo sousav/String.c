@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 14:15:49 2016 John Doe
-** Last update Mon Oct 10 14:29:07 2016 John Doe
+** Last update Mon Oct 10 14:44:49 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -40,7 +40,7 @@ char			*my_strdup(char *src)
   int			i;
 
   if ((str = malloc(sizeof(char) * (my_strlen(src) + 1))) == NULL)
-    return (NULL);
+    return (STRING_ERROR);
   i = 0;
   while (src[i])
     {

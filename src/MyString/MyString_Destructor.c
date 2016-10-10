@@ -10,7 +10,7 @@
 
 #include		"MyString.h"
 
-void 			DestructString(m_string **self)
+void 			DestructString(t_string **self)
 {
   free(*self);
   *self = NULL;
