@@ -21,7 +21,7 @@ LIBDIR		=	lib
 RM		=	rm -f
 
 CC		=	gcc
-CFLAGS		=	-W -Wall -Wextra			\
+CFLAGS		=	-W -Wall -Wextra -g -g3 -ggdb		\
 			-ansi -pedantic				\
 			-I$(INCDIR)
 
@@ -31,6 +31,7 @@ SRC		=	$(SRCDIR)/main.c
 
 SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_Destructor.c		\
+			$(STRDIR)/MyString_AppendChar.c		\
 			$(STRDIR)/MyString_Print.c
 
 SRC		+=	$(STRDIR)/MyString_StrUtils_1.c

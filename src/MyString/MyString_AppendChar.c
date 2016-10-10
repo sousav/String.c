@@ -5,12 +5,12 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 14:07:07 2016 John Doe
-** Last update Mon Oct 10 14:45:39 2016 John Doe
+** Last update Mon Oct 10 15:04:38 2016 John Doe
 */
 
 #include		"MyString.h"
 
-int 			AppendChar(struct s_string *self, char c)
+int 			AppendCharToString(struct s_string *self, char c)
 {
   char 			*old_content;
   char			*new_content;
@@ -18,7 +18,7 @@ int 			AppendChar(struct s_string *self, char c)
 
   old_content = self->content;
   new_content = malloc(sizeof(char) * (my_strlen(old_content) + 2));
-  if (new_content == null)
+  if (new_content == NULL)
     return (STRING_ERROR);
   i = 0;
   while (old_content[i])

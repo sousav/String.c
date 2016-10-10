@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:17:49 2016 John Doe
-** Last update Mon Oct 10 14:36:59 2016 John Doe
+** Last update Mon Oct 10 15:06:59 2016 John Doe
 */
 
 #include 	"MyString.h"
@@ -13,9 +13,11 @@
 int		main(void)
 {
 
-  m_string string = ConstructStringFromStr("hello everybody\n");
+  m_string string = ConstructStringFromStr("hello");
   string->Print(string, STRING_TERM_FD);
+
   string->AppendChar(string, 'b');
+  
   string->Print(string, STRING_TERM_FD);
   string->Destruct(&string);
 
