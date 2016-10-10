@@ -33,6 +33,8 @@ SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_Destructor.c		\
 			$(STRDIR)/MyString_Print.c
 
+SRC		+=	$(STRDIR)/MyString_StrUtils_1.c
+
 OBJ		=	$(SRC:.c=.o)
 
 all		:	title $(NAME)
