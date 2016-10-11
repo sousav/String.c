@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Tue Oct 11 10:22:53 2016 John Doe
-** Last update Tue Oct 11 10:37:49 2016 John Doe
+** Last update Tue Oct 11 10:55:53 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -39,8 +39,13 @@ static t_string		**formStringTabWithCharArray(char **tab)
 t_string		**StringSplitWithChar(t_string *self, char delim)
 {
   char			**tab;
+  char			*delim_array;
 
-  tab = str_to_wordtab(self->content, &delim);
+  delim_array = malloc(sizeof(char) * 2);
+  delim_array[0] = delim;
+  delim_array[1] = '\0';
+  tab = str_to_wordtab(self->content, delim_array);
+  free(delim_array);
   return (formStringTabWithCharArray(tab));
 }
 
