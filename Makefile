@@ -39,7 +39,7 @@ SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_ToLowerCase.c	\
 			$(STRDIR)/MyString_Contains.c		\
 			$(STRDIR)/MyString_CharAtIndex.c	\
-			$(STRDIR)/MyString_StringAfterIndex.c	\
+			$(STRDIR)/MyString_StringCutWithIndex.c	\
 			$(STRDIR)/MyString_Split.c		\
 			$(STRDIR)/MyString_Print.c
 

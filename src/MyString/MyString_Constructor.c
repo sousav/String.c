@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Tue Oct 11 10:23:13 2016 John Doe
+** Last update Tue Oct 11 11:00:34 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -36,6 +36,8 @@ t_string		*ConstructStringFromStr(char *str)
   self->CharAtIndex = CharAtIndexInString;
 
   self->StringAfterIndex = StringAfterIndexInString;
+  self->StringBeforeIndex = StringBeforeIndexInString;
+  self->StringBetweenIndex = StringBetweenIndexInString;
 
   self->SplitWithChar = StringSplitWithChar;
   self->SplitWithCharArray = StringSplitWithCharArray;

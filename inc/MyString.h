@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:18:39 2016 John Doe
-** Last update Tue Oct 11 10:24:37 2016 John Doe
+** Last update Tue Oct 11 10:59:58 2016 John Doe
 */
 
 #ifndef                 		MYSTRING_H_
@@ -39,6 +39,8 @@ typedef struct 				s_string
   char (*CharAtIndex)			(struct s_string *self, int index);
 
   struct s_string *(*StringAfterIndex)	(struct s_string *self, int index);
+  struct s_string *(*StringBeforeIndex)	(struct s_string *self, int index);
+  struct s_string *(*StringBetweenIndex)(struct s_string *self, int indexStart, int indexEnd);
 
   struct s_string **(*SplitWithChar)	(struct s_string *self, char delim);
   struct s_string **(*SplitWithCharArray)(struct s_string *self, char *delim);
@@ -73,7 +75,8 @@ int 					StringContainsString(t_string *self, t_string *string);
 char					CharAtIndexInString(t_string *self, int index);
 
 t_string				*StringAfterIndexInString(t_string *self, int index);
-
+t_string				*StringBeforeIndexInString(t_string *self, int index);
+t_string				*StringBetweenIndexInString(t_string *self, int indexStart, int indexEnd);
 
 t_string				**StringSplitWithChar(t_string *self, char delim);
 t_string				**StringSplitWithCharArray(t_string *self, char *delim);
