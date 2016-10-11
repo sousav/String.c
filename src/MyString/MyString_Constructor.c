@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 12:17:29 2016 John Doe
-** Last update Mon Oct 10 16:49:36 2016 John Doe
+** Last update Tue Oct 11 10:23:13 2016 John Doe
 */
 
 #include		"MyString.h"
@@ -20,6 +20,8 @@ t_string		*ConstructStringFromStr(char *str)
 
   self->Print = PrintString;
 
+  self->Lenght = StringLenght;
+
   self->AppendChar = AppendCharToString;
   self->AppendCharArray = AppendCharArrayToString;
   self->AppendString = AppendStringToString;
@@ -30,6 +32,14 @@ t_string		*ConstructStringFromStr(char *str)
   self->ContainsChar = StringContainsChar;
   self->ContainsCharArray = StringContainsCharArray;
   self->ContainsString = StringContainsString;
+
+  self->CharAtIndex = CharAtIndexInString;
+
+  self->StringAfterIndex = StringAfterIndexInString;
+
+  self->SplitWithChar = StringSplitWithChar;
+  self->SplitWithCharArray = StringSplitWithCharArray;
+  self->SplitWithString = StringSplitWithString;
 
   self->Destruct = DestructString;
 

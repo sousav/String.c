@@ -31,15 +31,20 @@ SRC		=	$(SRCDIR)/main.c
 
 SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_Destructor.c		\
+			$(STRDIR)/MyString_Lenght.c		\
 			$(STRDIR)/MyString_AppendChar.c		\
 			$(STRDIR)/MyString_AppendCharArray.c	\
 			$(STRDIR)/MyString_AppendString.c	\
 			$(STRDIR)/MyString_ToUpperCase.c	\
 			$(STRDIR)/MyString_ToLowerCase.c	\
 			$(STRDIR)/MyString_Contains.c		\
+			$(STRDIR)/MyString_CharAtIndex.c	\
+			$(STRDIR)/MyString_StringAfterIndex.c	\
+			$(STRDIR)/MyString_Split.c		\
 			$(STRDIR)/MyString_Print.c
 
-SRC		+=	$(STRDIR)/MyString_StrUtils_1.c
+SRC		+=	$(STRDIR)/MyString_StrWordTab.c		\
+			$(STRDIR)/MyString_StrUtils_1.c
 
 OBJ		=	$(SRC:.c=.o)
 
