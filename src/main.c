@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:17:49 2016 John Doe
-** Last update Tue Oct 11 11:14:06 2016 John Doe
+** Last update Tue Oct 11 11:25:50 2016 John Doe
 */
 
 #include 	"MyString.h"
@@ -13,7 +13,7 @@
 int		main(void)
 {
 
-  m_string string = ConstructStringFromStr("HELLO everyboDY, how aRe you\n");
+  String string = ConstructStringFromStr("HELLO everyboDY, how aRe you\n");
   string->Print(string, STRING_TERM_FD);
 
   

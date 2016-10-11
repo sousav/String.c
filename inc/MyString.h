@@ -5,7 +5,7 @@
 ** Login   <login_x@epitech.eu>
 **
 ** Started on  Mon Oct 10 10:18:39 2016 John Doe
-** Last update Tue Oct 11 10:59:58 2016 John Doe
+** Last update Tue Oct 11 11:25:56 2016 John Doe
 */
 
 #ifndef                 		MYSTRING_H_
@@ -52,7 +52,7 @@ typedef struct 				s_string
   /* Destructor */
   void (*Destruct)			(struct s_string **self);
 } 					t_string;
-typedef t_string *			m_string;
+typedef t_string *			String;
 
 /* MyString function */
 t_string				*ConstructStringFromStr(char *str);
