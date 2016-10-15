@@ -23,6 +23,8 @@ typedef struct 				s_string
   /* Publics Methods */
   void (*Print)				(struct s_string *self, int out_fd);
 
+  char *(*ToCharArray) (struct s_string *self);
+
   int (*Lenght)				(struct s_string *self);
 
   int (*AppendChar)			(struct s_string *self, char c);
@@ -58,6 +60,8 @@ typedef t_string *			String;
 t_string				*ConstructStringFromStr(char *str);
 
 void					PrintString(t_string *self, int out_fd);
+
+char *StringToCharArray(t_string *self);
 
 int					StringLenght(t_string *self);
 

@@ -20,6 +20,8 @@ t_string		*ConstructStringFromStr(char *str)
 
   self->Print = PrintString;
 
+  self->ToCharArray = StringToCharArray;
+
   self->Lenght = StringLenght;
 
   self->AppendChar = AppendCharToString;

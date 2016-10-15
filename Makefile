@@ -41,6 +41,7 @@ SRC		+=	$(STRDIR)/MyString_Constructor.c	\
 			$(STRDIR)/MyString_CharAtIndex.c	\
 			$(STRDIR)/MyString_StringCutWithIndex.c	\
 			$(STRDIR)/MyString_Split.c		\
+			$(STRDIR)/MyString_ToAnyType.c		\
 			$(STRDIR)/MyString_Print.c
 
 SRC		+=	$(STRDIR)/MyString_StrWordTab.c		\
